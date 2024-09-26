@@ -52,11 +52,17 @@ composer install
 4 . Konfigurasikan file .env
 
 DB_CONNECTION=mysql
+
 DB_HOST=127.0.0.1
+
 DB_PORT=3306
+
 DB_DATABASE=berita_db
+
 DB_USERNAME=root
+
 DB_PASSWORD=
+
 DB_COLLATION=utf8mb4_unicode_ci
 
 
