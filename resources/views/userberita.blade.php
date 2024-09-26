@@ -4,44 +4,45 @@
     <div class="container my-5">
         <h1 class="text-center text-purple mb-4">{{ $berita->judul }}</h1>
 
-        <div class="card shadow-sm border-light">
-            <div class="card-header bg-light">
-                <h6 class="text-muted">Ditulis oleh: {{ $berita->penulis }}</h6>
+        <div class="card shadow-lg border-0 rounded">
+            <div class="card-header bg-purple text-white">
+                <h6 class="mb-0">Ditulis oleh: {{ $berita->penulis }}</h6>
                 <p class="mb-0"><strong>Tanggal: </strong>{{ $berita->created_at->format('d M Y') }}</p>
             </div>
             <div class="card-body">
-                <p class="card-text">{{ $berita->konten }}</p> <!-- Menampilkan konten berita penuh -->
+                <p>{{ $berita->konten }}</p> <!-- Menampilkan konten berita penuh -->
             </div>
         </div>
 
         <!-- Tombol kembali ke Dashboard -->
         <div class="text-center mt-4">
-            <a class="btn btn-secondary" href="{{ route('dashboard') }}">Kembali ke Dashboard</a>
+            <a class="btn btn-primary shadow" href="{{ route('dashboard') }}">Kembali ke Dashboard</a>
         </div>
     </div>
 
     <style>
-        body {
-            background-color: #f5f5f5; /* Latar belakang halaman yang lebih lembut */
+        .bg-purple {
+            background-color: #6f42c1; /* Warna ungu untuk header kartu */
         }
         .text-purple {
-            color: #6f42c1; /* Warna ungu untuk teks */
+            color: #6f42c1; /* Warna ungu untuk judul */
         }
         .card {
-            border-radius: 10px; /* Sudut yang lebih halus pada kartu */
-            transition: box-shadow 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 15px; /* Sudut yang lebih halus pada kartu */
         }
         .card:hover {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Bayangan lebih dalam pada hover */
+            transform: translateY(-5px); /* Efek mengangkat saat hover */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam pada hover */
         }
-        .btn-secondary {
-            background-color: #6c757d; /* Warna tombol */
-            border: none; /* Menghilangkan border default */
-            border-radius: 5px; /* Sudut tombol yang lebih halus */
-            transition: background-color 0.2s;
+        .btn-primary {
+            background-color: #6f42c1; /* Warna ungu untuk tombol */
+            border: none; /* Menghilangkan border tombol */
+            transition: background-color 0.3s, transform 0.2s;
         }
-        .btn-secondary:hover {
-            background-color: #5a6268; /* Warna tombol saat hover */
+        .btn-primary:hover {
+            background-color: #5a2b9c; /* Warna gelap saat hover */
+            transform: translateY(-3px); /* Efek mengangkat saat hover pada tombol */
         }
     </style>
 @endsection

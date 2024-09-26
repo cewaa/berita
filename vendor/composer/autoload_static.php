@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitfe20f0cd2f9754202db5d58ee7495855
+class ComposerStaticInitfd5850a90c34c5f6877f1cdfe72b9c06
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -504,7 +504,12 @@ class ComposerStaticInitfe20f0cd2f9754202db5d58ee7495855
     );
 
     public static $classMap = array (
+        'App\\Http\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthController.php',
+        'App\\Http\\Controllers\\BeritaController' => __DIR__ . '/../..' . '/app/Http/Controllers/BeritaController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\UserBeritaController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserBeritaController.php',
+        'App\\Http\\Middleware\\AdminMiddleware' => __DIR__ . '/../..' . '/app/Http/Middleware/AdminMiddleware.php',
+        'App\\Models\\Berita' => __DIR__ . '/../..' . '/app/Models/Berita.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -626,6 +631,7 @@ class ComposerStaticInitfe20f0cd2f9754202db5d58ee7495855
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\UserSeeder' => __DIR__ . '/../..' . '/database/seeders/UserSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
         'DateException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
         'DateInvalidOperationException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php',
@@ -6449,9 +6455,9 @@ class ComposerStaticInitfe20f0cd2f9754202db5d58ee7495855
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitfe20f0cd2f9754202db5d58ee7495855::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitfe20f0cd2f9754202db5d58ee7495855::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitfe20f0cd2f9754202db5d58ee7495855::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitfd5850a90c34c5f6877f1cdfe72b9c06::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitfd5850a90c34c5f6877f1cdfe72b9c06::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitfd5850a90c34c5f6877f1cdfe72b9c06::$classMap;
 
         }, null, ClassLoader::class);
     }

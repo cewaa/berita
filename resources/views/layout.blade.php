@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #c58ff3; /* Latar belakang gelap */
+            background-color: #f8f9fa; /* Latar belakang abu-abu terang */
         }
         .navbar {
             background-color: #6f42c1; /* Warna ungu untuk navbar */
@@ -23,13 +23,15 @@
         .container {
             margin-top: 50px; /* Jarak antara navbar dan konten */
         }
-        @media (max-width: 576px) {
-            .navbar {
-                text-align: center; /* Rata tengah pada navbar untuk layar kecil */
-            }
-            .container {
-                margin-top: 30px; /* Mengurangi margin untuk layar kecil */
-            }
+        /* Gaya untuk footer */
+        footer {
+            background-color: #6f42c1;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
         }
     </style>
     <title>Your App Title</title>
@@ -41,7 +43,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto"> <!-- Tambahkan ml-auto untuk mengatur posisi link -->
+            <ul class="navbar-nav ml-auto"> <!-- Rata kanan untuk menu navbar -->
                 <!-- Link ke Laman Admin (hanya untuk admin) -->
                 @if(Auth::check() && Auth::user()->role === 'admin')
                     <li class="nav-item">
@@ -69,7 +71,7 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container mt-5">
         @if(session('success'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{ session('success') }}
@@ -81,6 +83,8 @@
 
         @yield('content')
     </div>
+
+ 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
