@@ -38,8 +38,11 @@
 git clone https://github.com/cewaa/berita
 
 2 . Pindah ke Direktori Proyek
+
 cd berita
+
 Setelah Itu Masuk Ke dalam Visual Studio Code
+
 code .
 
 3 . Install atau Update composer
