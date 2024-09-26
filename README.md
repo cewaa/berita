@@ -13,10 +13,10 @@
 - Melihat isi berita
 - Multi User
 - Admin :
-Pengguna yang dapat Menggunakan Fungsi CRUD Mengenai berita yang ada di halaman dashboard yaitu laman admin
+Pengguna yang dapat Melihat dan Menggunakan Fungsi CRUD Mengenai berita yang ada di Halaman Dashboard yaitu Laman Admin
 
 - User :
-Pengguna yang dapat Melihat dashboard dan isi dari berita yang telah dibuat admin
+Pengguna yang dapat Melihat Halaman Dashboard dan isi dari berita yang telah dibuat admin
 
 
 ## akun default untuk pengujian
