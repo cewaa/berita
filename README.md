@@ -11,10 +11,11 @@
 - Logout
 - Membuat berita
 - Melihat isi berita
-Multi User
+- Multi User
 Admin :
 Pengguna yang dapat Menggunakan Fungsi CRUD Mengenai berita
-User
+
+User :
 Pengguna yang dapat Melihat dan melihat isi dari berita yang telah dibuat admin
 
 
