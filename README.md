@@ -33,7 +33,8 @@ Pengguna yang dapat Melihat Halaman Dashboard dan isi dari berita yang telah dib
 ![Screenshot 2024-09-27 034602](https://github.com/user-attachments/assets/08745e7b-9640-4a14-825d-f1e1386e08d0)
 
 ## UML
-![uml](https://github.com/user-attachments/assets/042b09ac-cfd2-4f73-85c8-b41cfd7ee2bb)
+![Screenshot 2024-09-27 203128](https://github.com/user-attachments/assets/83697ed2-eca7-4c83-9e4b-7c9486c5ab45)
+
 
 ## Teknologi Yang Digunakan
 - Laravel 11 Bootstrap
